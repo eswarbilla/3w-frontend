@@ -1,0 +1,57 @@
+/* Container styling for the dashboard */
+.dashboard {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  /* Each submission block */
+  .dashboard .submission {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  /* Name and social media handle styling */
+  .dashboard h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .dashboard p {
+    margin: 5px 0 15px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Image grid layout */
+  .dashboard .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .dashboard .images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .dashboard .images img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .dashboard .images img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
